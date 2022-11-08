@@ -92,8 +92,8 @@ Data Science Methodology Flowchart:
 		* Focus on developing models that are either descriptive or predictive
 		* Example of a descriptive model might examine things like: if a person did this, then they're likely to prefer that
 		* A predictive model tries to yield yes/no, or stop/go type outcomes. These models are based on the analytic approach that was taken, either statistically driven or machine learning driven
-		* *Type I Error (false-positive)*: e.g., when a true, non-readmission is misclassified, and action is taken to reduce that patient's risk, the cost of that error is the wasted intervention
-		* *Type II Error (false-negative)*: e.g., when a true readmission is misclassified, and no action is taken to reduce that risk, then the cost of that error is the readmission and all its attended costs, plus the trauma to the patient
+		* *Type I Error (false-positive)*:
+		* *Type II Error (false-negative)*:
 		* *Training set is used for predictive modelling*
 
 	8. **Evaluation**:
