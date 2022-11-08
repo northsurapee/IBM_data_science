@@ -67,7 +67,7 @@ Data Science Methodology Flowchart:
 	
 	2. **Analytic Approach**: Helps identify what type of patterns will be needed to address the question most effectively.
 	
-	3. **Data Requirements**: We learned that the chosen analytic approach determines the data requirements. Specifically, the analytic methods to be used require certain data content, formats and representations, guided by domain knowledge.
+	3. **Data Requirements**: identifying the necessary data content, formats and sources for initial data collection.
 
 	4. **Data Collection**: When collecting data, it is alright to defer decisions about unavailable data, and attempt to acquire it at a later stage
 
