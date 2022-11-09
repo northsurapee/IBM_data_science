@@ -219,10 +219,12 @@ for i, x in enumerate(['A', 'B', 'C']):
 
 for i, x in enumerate(['A', 'B', 'C']):
     print(i, 2*x) 	# returns: 0 AA; 1 BB; 2 CC
-```
+
 #while loop
 
 while("Apple" == "Orange"):
+
+```
 
 
 ### Video 3: Functions
@@ -267,9 +269,54 @@ def ACDC(y):
 	rating = 9		
 	return (rating + y)
 ```
+### Video 4: Exception Handling
 
+Try Except
 
-### Video 4: Objects and Classes
+```python
+
+# potential code before try catch
+
+try:
+    # code to try to execute
+except ZeroDivisionError:
+    # code to execute if there is a ZeroDivisionError
+except NameError:
+    # code to execute if there is a NameError
+except:
+    # code to execute if ther is any exception
+else:
+    # code to execute if there is no exception
+finally:
+    # code to execute at the end of the try except no matter what
+    
+# code that will execute if there is no exception or a one that we are handling
+
+```
+
+Example Exception coding
+
+```python
+
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+except ZeroDivisionError:
+    print("The number you provided cant divide 1 because it is 0")
+except ValueError:
+    print("You did not provide a number")
+except:
+    print("Something went wrong")
+else:
+    print("success a=",a)
+finally:
+    print("Processing Complete")
+    
+```
+
+### Video 5: Objects and Classes
 
 1. Object
 	* Python has lots of data types:
