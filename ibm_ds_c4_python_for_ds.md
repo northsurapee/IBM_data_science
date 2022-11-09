@@ -208,12 +208,22 @@ set1.issubset(set2)		# Check if set1 is a subset of set2: FALSE
 ```python
 range(10) # Get 0 to 9
 
+#for loop
+
+for i in range(x,y):
+
+# for x in ...
+
 for i, x in enumerate(['A', 'B', 'C']):
     print(i, x) # i returns index, x return value 
 
 for i, x in enumerate(['A', 'B', 'C']):
     print(i, 2*x) 	# returns: 0 AA; 1 BB; 2 CC
 ```
+#while loop
+
+while("Apple" == "Orange"):
+
 
 ### Video 3: Functions
 
