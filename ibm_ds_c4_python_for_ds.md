@@ -34,7 +34,7 @@ tup = ('disco', 10, 1.2, "jazz", 15)
 ```
 
 Get tuple length: use function `len()`
-Tuples can't *modify*: we can't change them
+Tuples are *(immutable (can't modify))*: we can't change them
 
 ```python
 tup = ('disco', 10, 1.2, "jazz", 15)
@@ -61,7 +61,7 @@ tup = (10, 1.2, ("pop", "rock"), (3,4), 5)
 ls = ['disco', 10, 1.2]	# See the difference with tuple?
 ```
 
-Unlike tuple, lists can *modify*:
+Unlike tuple, lists are *mutable (can modify)*:
 
 ```python
 ls = ['disco', 10, 1.2]	
