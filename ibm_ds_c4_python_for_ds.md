@@ -34,7 +34,7 @@ tup = ('disco', 10, 1.2, "jazz", 15)
 ```
 
 Get tuple length: use function `len()`
-Tuples are *immutable*: we can't change them
+Tuples can't *modify*: we can't change them
 
 ```python
 tup = ('disco', 10, 1.2, "jazz", 15)
@@ -61,7 +61,7 @@ tup = (10, 1.2, ("pop", "rock"), (3,4), 5)
 ls = ['disco', 10, 1.2]	# See the difference with tuple?
 ```
 
-Unlike tuple, lists are *mutable*:
+Unlike tuple, lists can *modify*:
 
 ```python
 ls = ['disco', 10, 1.2]	
@@ -106,7 +106,7 @@ ls.append(["pop", 10]) # ls = [1, 2,  ["pop", 10]]: Add as only 1 element
 "a,b".split(",")	# define delimiter to split
 ```
 
-*Aliasing*: If list B is an alias of A, when change A, B will change as well
+*Pass by reference*: If list B = A, when change A, B will change as well
 		
 ```python
 A = [1, 2]	
@@ -114,7 +114,7 @@ B = A
 A[0] = 0 # Therefore B becomes [0, 2] as a consequence
 ```
 
-*Clone*: To ged rid of changement, we can use clone, any change in the original list will not affect the clone
+*Clone -> Pass by value*: To ged rid of changement, we can use clone, any change in the original list will not affect the clone
 
 ```python
 A = [1, 2]	
