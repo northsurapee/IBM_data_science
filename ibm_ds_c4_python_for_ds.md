@@ -244,7 +244,7 @@ def ArtisNames(*names):  # names = ("harry", "potter")
 	for name in names:
 		print (name)
 
-ArtisNames("harry", "potter") # Arguments are collected automatically with *names
+ArtisNames("harry", "potter") # Arguments are packed automatically into *names
 ```
 
 Local & Global Variables:
