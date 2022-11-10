@@ -584,13 +584,13 @@ a = ["0", 1, "two", "3", 4]		# a normal python list
 # Using numpy: Much faster than regular python
 import numpy as np
 
-# Cast the list to a numpy array:
-a = np.array([0, 1, 2, 3, 4])
+# Cast the list to a numpy array: array obj in NumPy is called **ndarray**
+a = np.array([0, 1, 2, 3, 4]) # a[0] -> 0
 
 type(a)		# obtain the type of a: numpy.ndarray
 a.dtype		# obtain the data type of a: dtype('int64')
 a.size		# 5
-a.ndim 		# 1
+a.ndim 		# 1 dimension
 a.shape 	# (5,)
 
 # Another array
@@ -638,10 +638,10 @@ z = u+v 	# z:array([2,0])
 z = 2*u  	# z = [2,0]
 z = u*v 	# z = [1,0]
 
-# Dot product: z = u'*v (like matrix multiplication)
+# Dot product: z = u *v (like matrix multiplication)
 u = np.array([1,2])
 v = np.array([3,1])
-z = np.dot(u,v)	# z = u' * v = 1*3+2*1 = 5
+z = np.dot(u,v)	# z = u * v = 1*3+2*1 = 5
 
 # Adding constant to a np array (called BROADCASTING)
 u = np.array([1,2])
@@ -662,7 +662,7 @@ x = np.array([0, np.pi/2, np.pi])
 y = np.sin(x) 	# y:array([0, 1, 1.2e-16])
 
 # Numpy linspace:
-np.linspace(-2, 2, num=5)	# array([-2, -1, 0, 1, 2])
+np.linspace(-2, 2, num=5)	# array([-2, -1, 0, 1, 2]) -> array starting from -2 to 2 with 5 member
 
 # Plotting math functions
 x = np.linspace(0, 2*np.pi, 100)
