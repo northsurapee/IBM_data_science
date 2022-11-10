@@ -409,28 +409,31 @@ print (dir(c))
 ### Video 1: Reading Files with Open
 
 ```python
-file1 = open("/resources/data/example2.txt", "w")
+# Open file
+file1 = open("/resources/data/example2.txt", "w") #--> file1 is "file object"
 # Available modes: writing (w), reading (r), appending (a)
 
 file1.name 		# get the name (string) of the file: '/resources/data/example2.txt'
 file1.mode 		# get the mode: 'w'
-file1.close()	# close the file
+file1.close()		# always close the file obj.
 
-# Advantage of "with" statement: automatically close the file
+# Better Way to Open a File
+# Advantage of "with" statement: automatically close the file in the end of indent.
 with open("/resources/data/example2.txt", "r") as file1:
+	
 	file_stuff = file1.read()	# store the content as a string
 	print (file_stuff)
 
 print (file1.close())	# check if file1 is closed or not
-print (file_stuff)		# print the content of file1
+print (file_stuff)		# print the content of file1 (that read in the indent)
 
-# Reading all lines of the file: 
+# Reading all lines of the file: readlines() -> list of all lines
 with open("/resources/data/example2.txt", "r") as file1:
-	file_stuff = file1.readlines() 	# read all lines, attention: readlines() <> readline()
+	file_stuff = file1.readlines() 	
 	print (file_stuff)
 	# file_stuff: ['this is line 1\n', 'this is line 2\n']	
 
-# Reading line-by-line:
+# Reading line-by-line: -> the n th of calling readline() its return n th line
 with open("/resources/data/example2.txt", "r") as file1:
 	file_stuff = file1.readline() 	
 	print (file_stuff)		# file_stuff: 'this is line 1\n'
@@ -444,7 +447,8 @@ with open("/resources/data/example2.txt", "r") as file1:
 
 # Specify the number of characters to print:
 with open("/resources/data/example2.txt", "r") as file1:
-	file_stuff = file1.readlines(4) 	# file_stuff: 'this'
+	file_stuff = file1.read(4) 	# file_stuff: 'this' 
+	# file1.read(the next n characters of file) but file1.readline(same but not exceeding the end of the line)
 
 ```
 
