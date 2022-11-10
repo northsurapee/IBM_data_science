@@ -538,6 +538,13 @@ y:
 ------------------------------------------
 '''
 
+#To view the column as a series, just use one bracket:
+x = df1['Student']
+0     David
+1    Samuel
+2     Terry
+3      Evan
+
 # To access unique elements: ix method
 df.ix[i,j]	# Access the (i+1)-th row, (j+1)-th column	
 df.ix[0,'Album'] 	# Access the first row of column named 'Album'
