@@ -570,6 +570,7 @@ df1.to_csv('file_name.csv')
 ```
 
 ### Video 4: One-Dimensional Numpy
+* Numpy -> library for scientific computing
 * Basics and array creation
 * Indexing and slicing
 * Basic operations
