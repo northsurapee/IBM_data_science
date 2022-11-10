@@ -484,11 +484,13 @@ with open("example1.txt", "r") as read_file: 		# mode "read"
 
 ```
 
-### Video 2: Loading Data with Pandas
+### Video 3: Loading Data with Pandas
 
+Pandas - library(pre-build classes and functions) for data analysis.
+** DataFrame is a table-like with row and column
 
 ```python
-import pandas as pd
+import pandas as pd # import library
 
 # Open CSV file
 csv_path = 'file1.csv' 
@@ -501,7 +503,7 @@ df = pd.read_excel(xlsx_path)	# df becomes a dataframe
 # Read first 5 rows, like the head function in R
 df.head()	
 
-# Create a dataframe out of a dictionary:
+# Create a dataframe out of a dictionary: key-header column , value-rows
 songs = {'Album': ['Thriller', 'Back in Black'], \
 		 'Release': [1982, 1980],
 		 'Length': ['00:42:19', '00:42:11']}  # songs is a dictionary
@@ -532,7 +534,7 @@ y:
 ------------------------------------------
 	Album			length 		
 0	Thriller		00:42:19	
-1	Back in Black	00:42:11	
+1	Back in Black		00:42:11	
 ------------------------------------------
 '''
 
@@ -545,7 +547,7 @@ z = df.ix[0:2, 0:3]					# Access with indices
 z = df.ix[0:2, 'Album':'Release']	# Access with both indices and col names
 ```
 
-### Video 3: Pandas: Working with and Saving Data
+### Video 4: Pandas: Working with and Saving Data
 
 ```python
 # List unique values in a column
@@ -553,9 +555,9 @@ df['Release'].unique()
 
 # List values with condition
 df['Release'] >= 1980	# Result will be array of boolean values (true/false)
-df1 = df[df['Release'] >= 1980]	# Simple do this to get the values with condition
+df1 = df[df['Release'] >= 1980]	# New dataframe where release >= 1980
 
-# Save as CSV:
+# Save as CSV: include a.csv extension
 df1.to_csv('file_name.csv')
 
 ```
